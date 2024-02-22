@@ -1,6 +1,6 @@
 package integrantes;
 
-import ensambles.IEnsamble;
+import agrupaciones.IAgrupacionMusical;
 
 public abstract class Integrante implements IIntegrante{
 
@@ -23,7 +23,7 @@ public abstract class Integrante implements IIntegrante{
     }
 
     @Override
-    public void asignarEnsamble(IEnsamble ensamble) {
-        ensamble.agregarIntegrante(this);
+    public void asignarEnsamble(IAgrupacionMusical ensamble) {
+        ensamble.addIntegrante(this);
     }
 }
