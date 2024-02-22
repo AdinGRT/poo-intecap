@@ -24,6 +24,6 @@ public abstract class Integrante implements IIntegrante{
 
     @Override
     public void asignarEnsamble(IAgrupacionMusical ensamble) {
-        ensamble.addIntegrante(this);
+        ensamble.addIntegrante(this.identificador, this);
     }
 }

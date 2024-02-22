@@ -2,13 +2,15 @@ package agrupaciones;
 
 import integrantes.IIntegrante;
 
-import java.util.List;
+import java.util.Map;
 
 public interface IAgrupacionMusical {
-    void addIntegrante(IIntegrante integrante);
+    String getIdentificador();
+    String getNombre();
+    void addIntegrante(String identificador, IIntegrante integrante);
     void removeIntegrante(IIntegrante integrante);
-    List<IIntegrante> obtenerIntegrantes();
-    int obtenerCantidadIntegrantes();
+    Map<String, IIntegrante> obtenerIntegrantes();
+    int obtenerCantidadIntegrantesActivos();
     String getTipoAgrupacion();
 
 }
