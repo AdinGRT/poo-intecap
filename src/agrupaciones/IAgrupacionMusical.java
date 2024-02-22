@@ -1,4 +1,4 @@
-package ensambles;
+package agrupaciones;
 
 import integrantes.IIntegrante;
 
